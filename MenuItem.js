@@ -1,17 +1,17 @@
 const mongoose = require('mongoose');
 
 const menuItemSchema = new mongoose.Schema({
-  name: {
-     type: String, 
-     required: true 
-    },
+  name: { 
+    type: String, 
+    required: true
+   },
   description:{
-  type: String
+    type: String
   },
   price: { 
-    type: Number,
-     required: true 
-    }
+    type: Number, 
+    required: true 
+  }
 });
 
 const MenuItem = mongoose.model('MenuItem', menuItemSchema);
